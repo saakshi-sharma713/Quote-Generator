@@ -56,7 +56,7 @@ Edit
 📷 Screenshots
 (Add your project screenshots here)
 
-💡 How It Works
+<h2>💡 How It Works</h2>
 The app uses Fetch API inside a React component to call the quote API.
 
 The fetched JSON response is parsed to extract the quote and author.
