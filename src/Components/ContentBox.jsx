@@ -1,54 +1,42 @@
 import { useEffect, useState } from "react";
 
 function ContentBox() {
-  const [data, setData] = useState({}); // Holds both quote and author
-  const [fadeState, setFadeState] = useState(true); // Fade state for quote and author
+  const [data, setData] = useState([]); // array of quotes
+  const [fadeState, setFadeState] = useState(true);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://qapi.vercel.app/api/random");
-      const data = await response.json();
-      setData(data);
+      const response = await fetch("https://quoteslate.vercel.app/api/quotes?page=1&limit=20");
+      const json = await response.json();
+      setData(json.data);
     };
     fetchData();
   }, []);
 
-  const handleNext = async () => {
-    setFadeState(false); // Start fade-out
-    setTimeout(async () => {
-      const response = await fetch("https://qapi.vercel.app/api/random");
-      const newData = await response.json();
-      setData(newData); // Update the data (quote and author)
-      setFadeState(true); // Start fade-in
-    }, 500); // Match CSS transition duration
+  const handleNext = () => {
+    setCount((prev) => (prev + 1) % data.length);
   };
 
-  return (
-    <>
-      <h1 className="heading">Quote Generator</h1>
-      <div className="contentBox">
-        {/* Quote with dynamic fade effect */}
-        <h1
-          style={{
-            opacity: fadeState ? 1 : 0,
-            transition: "opacity 0.5s ease-in-out",
-          }}
-        >
-          "{data.quote}"
-        </h1>
-        {/* Author with the same fade effect */}
-        <h2
-          style={{
-            opacity: fadeState ? 1 : 0,
-            transition: "opacity 0.5s ease-in-out",
-          }}
-        >
-          By {data.author}
-        </h2>
-        <button onClick={handleNext}>Next</button>
-      </div>
+  return <>
+      {data.length > 0 ? (
+        <>
+          <h1 className="heading">Quote Generator</h1>
+          <div className="contentBox">
+            <h1 style={{ opacity: fadeState ? 1 : 0, transition: "opacity 0.5s ease-in-out" }}>
+              "{data[count].quote}"
+            </h1>
+            <h2 style={{ opacity: fadeState ? 1 : 0, transition: "opacity 0.5s ease-in-out" }}>
+              By {data[count].author}
+            </h2>
+            <button onClick={handleNext}>Next</button>
+          </div>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </>
-  );
+  
 }
 
 export default ContentBox;
