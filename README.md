@@ -1,7 +1,7 @@
 <h1>📜 Quote Generator</h1>
 A simple and elegant Quote Generator built with React that fetches random quotes from an external API and displays them instantly.
 
-🚀 Features
+<h2>🚀 Features</h2>
 Fetches random quotes using the qapi.vercel.app API
 
 Clean and responsive UI
@@ -10,14 +10,14 @@ Ability to get a new quote at the click of a button
 
 Built with React and Fetch API
 
-🛠️ Tech Stack
+<h2>🛠️ Tech Stack</h2>
 React – Frontend framework
 
 Fetch API – For making API requests
 
 CSS – For styling
 
-📦 Installation & Setup
+<h2>📦 Installation & Setup</h2>
 Clone the repository
 
 bash
@@ -40,7 +40,7 @@ npm run dev
 Open in browser
 Visit http://localhost:5173 (or the port shown in your terminal).
 
-🔗 API Source
+<h2>🔗 API Source</h2>
 Quotes are fetched from:
 https://qapi.vercel.app/api/random
 
