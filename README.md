@@ -44,17 +44,6 @@ Visit http://localhost:5173 (or the port shown in your terminal).
 Quotes are fetched from:
 https://quoteslate.vercel.app/api/quotes?page=1&limit=20
 
-Example API Response:
-
-json
-Copy
-Edit
-{
-  "quote": "The best way to predict the future is to invent it.",
-  "author": "Alan Kay"
-}
-📷 Screenshots
-(Add your project screenshots here)
 
 <h2>💡 How It Works</h2>
 The app uses Fetch API inside a React component to call the quote API.
