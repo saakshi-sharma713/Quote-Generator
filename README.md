@@ -42,7 +42,7 @@ Visit http://localhost:5173 (or the port shown in your terminal).
 
 <h2>🔗 API Source</h2>
 Quotes are fetched from:
-https://qapi.vercel.app/api/random
+https://quoteslate.vercel.app/api/quotes?page=1&limit=20
 
 Example API Response:
 
