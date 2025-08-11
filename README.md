@@ -41,7 +41,7 @@ Open in browser
 Visit http://localhost:5173 (or the port shown in your terminal).
 
 <h2>🔗 API Source</h2>
-Quotes are fetched from:
+Quotes are fetched from: 
 https://quoteslate.vercel.app/api/quotes?page=1&limit=20
 
 
