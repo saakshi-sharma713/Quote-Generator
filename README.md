@@ -17,10 +17,17 @@ Fetch API – For making API requests
 
 CSS – For styling
 
-
 <h2>🔗 API Source</h2>
 Quotes are fetched from: 
 https://quoteslate.vercel.app/api/quotes?page=1&limit=20
+
+<h2>💡 How It Works</h2>
+The app uses Fetch API inside a React component to call the quote API.
+
+The fetched JSON response is parsed to extract the quote and author.
+
+The state is updated, and the UI re-renders with the new quote.
+
 
 <h2>📦 Installation & Setup</h2>
 Clone the repository
@@ -39,11 +46,3 @@ Run the project
 npm run dev
 Open in browser
 Visit http://localhost:5173 (or the port shown in your terminal).
-
-
-<h2>💡 How It Works</h2>
-The app uses Fetch API inside a React component to call the quote API.
-
-The fetched JSON response is parsed to extract the quote and author.
-
-The state is updated, and the UI re-renders with the new quote.
