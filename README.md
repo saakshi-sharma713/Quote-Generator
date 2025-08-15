@@ -10,12 +10,12 @@ Ability to get a new quote at the click of a button
 
 Built with React and Fetch API
 
-<h2>🛠 Tech Stack</h2>
-React – Frontend framework
-
-Fetch API – For making API requests
-
-CSS – For styling
+## 🛠 Tech Stack
+- **React** – Component-based UI
+- **Tailwind CSS** – Styling and responsiveness
+- **JavaScript (ES6+)**
+- **fetch Api** - For making api request
+---
 
 <h2>🔗 API Source</h2>
 Quotes are fetched from: 
