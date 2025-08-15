@@ -12,9 +12,7 @@ Built with React and Fetch API
 
 <h2>🛠 Tech Stack</h2>
 React – Frontend framework
-
 Fetch API – For making API requests
-
 CSS – For styling
 
 <h2>🔗 API Source</h2>
