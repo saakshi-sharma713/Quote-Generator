@@ -17,32 +17,28 @@ Fetch API – For making API requests
 
 CSS – For styling
 
-<h2>📦 Installation & Setup</h2>
-Clone the repository
-
-```bash
-Copy
-Edit
-git clone https://github.com/your-username/quote-generator.git
-cd quote-generator
-Install dependencies
-
-bash
-Copy
-Edit
-npm install
-Run the project
-
-bash
-Copy
-Edit
-npm run dev
-Open in browser
-Visit http://localhost:5173 (or the port shown in your terminal).
 
 <h2>🔗 API Source</h2>
 Quotes are fetched from: 
 https://quoteslate.vercel.app/api/quotes?page=1&limit=20
+
+<h2>📦 Installation & Setup</h2>
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/quote-generator.git
+cd quote-generator
+
+##Install dependencies
+
+npm install
+Run the project
+
+## Run the Server
+
+npm run dev
+Open in browser
+Visit http://localhost:5173 (or the port shown in your terminal).
 
 
 <h2>💡 How It Works</h2>
