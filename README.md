@@ -20,7 +20,7 @@ CSS – For styling
 <h2>📦 Installation & Setup</h2>
 Clone the repository
 
-bash
+```bash
 Copy
 Edit
 git clone https://github.com/your-username/quote-generator.git
